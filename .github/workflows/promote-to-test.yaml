@@ -1,0 +1,19 @@
+name: Promote dev -> test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "values/adrian-java-app/**"
+  workflow_dispatch:
+
+jobs:
+  promote:
+    uses: Adrian-CICD-Project/ci-cd-templates/.github/workflows/promote-environment.yml@main
+    with:
+      app-name: adrian-java-app
+      source-env: dev
+      target-env: test
+      target-repo: Adrian-CICD-Project/infrastructure-env-test
+      acr-repo: acrfordevopspoc01adrian.azurecr.io/adrian-java-app
+    secrets: inherit
