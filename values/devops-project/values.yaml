@@ -1,10 +1,6 @@
 image:
   repository: acrfordevopspoc01adrian.azurecr.io/devops-project
-<<<<<<< HEAD
   tag: "1.0.3"
-=======
-  tag: "1.0.3"   # tu pipeline podmienia SHA
->>>>>>> 096e143 (Run)
   pullPolicy: IfNotPresent
 
 replicaCount: 1
@@ -25,4 +21,3 @@ service:
   type: ClusterIP
   port: 80
   targetPort: 8080
-
