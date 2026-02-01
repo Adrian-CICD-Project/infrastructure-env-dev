@@ -7,6 +7,10 @@ on:
       - "values/adrian-java-app/**"
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   promote:
     uses: Adrian-CICD-Project/ci-cd-templates/.github/workflows/promote-environment.yml@main
