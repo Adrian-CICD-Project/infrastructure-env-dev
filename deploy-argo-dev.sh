@@ -4,7 +4,7 @@
 RESOURCE_GROUP="rg-devops-poc01"
 CLUSTER_NAME="devops-poc01-test"
 CONTEXT="devops-poc01-test"
-MANIFEST="argocd-devops-project-dev.yaml"
+MANIFEST="argocd-adrian-java-app-dev.yaml"
 
 echo "---------------------------------------------------"
 echo "🚀 Rozpoczynam wdrażanie na środowisko: TEST"
